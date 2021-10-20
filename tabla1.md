@@ -11,19 +11,19 @@
 
 <?php
 $nombres = array ("Estela", "Gueorgui", "Linda", "Alfonso");
-echo "<table border=’2px’><tr><th>nombre</th></tr>";
+echo "<table border=’2px’><tr><th> Nombre: </th></tr>";
 $contador = 0;
 foreach ($nombres as $nombre){
     echo "<tr><td>".$nombre."</td></tr>";
 }
-
-$edades = array ("27", "25", "27", "43");
-echo "<table border=’2px’><tr><th>nombre</th></tr>";
-$contador = 0;
+echo "<br>";
+$edades = array ("27", "25", "27", "42");
+echo "<table border=’2px’><tr><th> Edad: </th></tr>";
+$contador = 1;
 foreach ($edades as $edad){
     echo "<tr><td>".$edad."</td></tr>";
 }
-echo "</table>";
+echo "</br>";
 ?>
     
 </body>
