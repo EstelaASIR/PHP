@@ -1,4 +1,5 @@
 <?php
+
 /*
 #EDAD DEL JEFE:
 $edad = $_POST["edad"];
@@ -7,21 +8,22 @@ echo "La edad del jefe es:" . $edad;
 
 
 #CALCULADORA:
- $numero1 = $_POST["num1"];
- $numero2 = $_POST["num2"];
- $operacion = $POST["operacion"];
-echo $operacion;
-
- if($operacion == "suma") {
-     $total = $numero1 + $numero2;
- } else {
-     $total = $numero1 + $numero2;
- }
-
+$numero1 = $_POST['numero1'];
+$numero2 = $_POST['numero2'];
+$operacion = $_POST['operacion'];
+	
+if($operacion == "suma"){
+	$solucion = $numero1 + $numero2;
+}else if($operacion == "resta"){
+	$solucion = $numero1 - $numero2;
+}else if($operacion == "multiplicacion"){
+	$solucion = $numero1 * $numero2;
+}else if($operacion == "division"){
+	$solucion = $numero1 / $numero2;
+}
 echo "<br>";
-echo "El resultado:" . $total;
+echo "El resultado es: ".$solucion;
 echo "<br>";
-
 
 
 /*
@@ -38,5 +40,6 @@ foreach ($nombres as $nombre){
 }
 */
 
-
 ?>
+
+
