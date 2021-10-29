@@ -1,4 +1,5 @@
-```php
+``` HTML
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -82,5 +83,6 @@ if(isset($_POST['Enviar']) &&  ($_POST['opcionlog']!="nulo")){
 </fieldset>
 </body>
 </html>
+
 ```
 
